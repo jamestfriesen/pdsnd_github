@@ -10,3 +10,7 @@ Resources:
     - This also helped with datetime and cleaning up
 - Code Academy (https://discuss.codecademy.com/)
 - Udacity (https://learn.udacity.com/)
+
+EDIT 1: New resources used for GitHub part of project
+
+- Educative (https://www.educative.io/)
