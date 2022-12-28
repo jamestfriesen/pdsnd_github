@@ -230,6 +230,7 @@ def display_data(city):
                 return
 
 def main():
+    """ Asks the user if they want to restart the project """
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
