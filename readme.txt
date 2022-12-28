@@ -14,5 +14,3 @@ Resources:
 EDIT 1: New resources used for GitHub part of project
 
 - Educative (https://www.educative.io/)
-
-EDIT 2: Second commit for course requirements
