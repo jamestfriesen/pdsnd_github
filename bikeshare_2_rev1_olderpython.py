@@ -152,11 +152,11 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print("Total travel time: ",total_travel_time)
+    print("Total travel time: ",pd.to_timedelta(total_travel_time, unit='sec'))
 
     # display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print("Mean travel time: ", mean_travel_time)
+    print("Mean travel time: ", pd.to_timedelta(mean_travel_time, unit='sec').round('1s'))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -230,6 +230,7 @@ def display_data(city):
                 return
 
 def main():
+    """ Asks the user if they want to restart the project """
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
